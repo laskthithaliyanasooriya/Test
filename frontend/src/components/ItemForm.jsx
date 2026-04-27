@@ -6,6 +6,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
       name: "",
       category: "",
       price: "",
+      serialnumber: "",
       description: "",
       imageUrl: "",
     }
@@ -21,6 +22,7 @@ function ItemForm({ initialValues, onSubmit, submitText }) {
     onSubmit({
       ...formData,
       price: Number(formData.price),
+      serialnumber: Number(formData.serialnumber),
     });
   };
 
